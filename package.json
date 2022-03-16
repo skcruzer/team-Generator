@@ -19,5 +19,8 @@
   "homepage": "https://github.com/skcruzer/team-Generator#readme",
   "devDependencies": {
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.1"
   }
 }
