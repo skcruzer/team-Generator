@@ -33,3 +33,37 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+
+// employee array; new employees will be pushed into this array 
+let employeeArray = []
+
+// using inquirer to get information about the team members
+inquirer.prompt ([
+  {
+    type: 'input',
+    name: 'name',
+    message: 'What is the name of the team manager?'
+  },
+  {
+    type: 'input',
+    name: 'id',
+    message: 'What is the id of the team manager?'
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is the email of the team manager?'
+  },
+  {
+    type: 'input',
+    name: 'officeNumber',
+    message: 'What is the office number of the team manager?'
+  },
+])
+.then(manager => {
+  console.log(manager)
+  let newManager = new Manager(manager.name, manager.id, manager.email, manager.officeNumber)
+  // will log manager information as an array
+  employeeArray.push(newManager)
+  console.log(employeeArray)
+})
