@@ -4,44 +4,16 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
+const fse = require('fs-extra')
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
-const { finished } = require("stream");
 
-
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
-
-// After the user has input all employees desired, call the `render` function (required
-// above) and pass in an array containing all employee objects; the `render` function will
-// generate and return a block of HTML including templated divs for each employee!
-
-// After you have your html, you're now ready to create an HTML file using the HTML
-// returned from the `render` function. Now write it to a file named `team.html` in the
-// `output` folder. You can use the variable `outputPath` above target this location.
-// Hint: you may need to check if the `output` folder exists and create it if it
-// does not.
-
-// HINT: each employee type (manager, engineer, or intern) has slightly different
-// information; write your code to ask different questions via inquirer depending on
-// employee type.
-
-// HINT: make sure to build out your classes first! Remember that your Manager, Engineer,
-// and Intern classes should all extend from a class named Employee; see the directions
-// for further information. Be sure to test out each class and verify it generates an
-// object with the correct structure and methods. This structure will be crucial in order
-// for the provided `render` function to work! ```
 
 // employee array; new employees will be pushed into this array 
 let employeeArray = []
-
-const finished = () => {
-  // calling the render function and passing it in an array
-  let myTeamHtml = render(employeeArray)
-}
 
 // function for user to add more team members or not
 const contQuest = () => {
@@ -53,7 +25,7 @@ const contQuest = () => {
   }])
   .then(yesOrNo => {
     // go back to engineerOrIntern call
-    if (yesOrNo.yesOrNo === 'yes') {
+    if (yesOrNo.yesOrNo === 'Yes') {
       engineerOrIntern() 
     } else {
       finished()
@@ -73,7 +45,7 @@ const engineerOrIntern = () => {
   ])
   .then(answer => {
     console.log(answer)
-    if(answer.engOrInt === 'Engineer') {
+    if (answer.engOrInt === 'Engineer') {
       // questions if adding an engineer to the team
       inquirer.prompt([
         {
@@ -126,11 +98,10 @@ const engineerOrIntern = () => {
         {
           type: 'input',
           name: 'school',
-          message: 'What does/did the intern attend?'
+          message: 'What school does the intern attend?'
         } 
       ])
       .then(intern => {
-        console.log(intern)
         let newIntern = new Intern(intern.name, intern.id, intern.email, intern.school)
         employeeArray.push(newIntern)
         console.log(employeeArray)
@@ -171,3 +142,16 @@ inquirer.prompt ([
   console.log(employeeArray)
   engineerOrIntern()
 })
+
+// function to generate HTML page file using file system  
+const finished = () => {
+  // calling render function and passing it through an array
+  let myTeamHtml = render(employeeArray)
+  fse.outputFile('./output/team.html', myTeamHtml)
+  .then(() => {
+    console.log('You have successfully built your team! Please check the output folder for your team.html')
+  })
+  .catch(err => {
+    console.error(err)
+  })
+}
