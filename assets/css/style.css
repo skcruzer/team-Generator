@@ -1,0 +1,40 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkgray;
+}
+
+.jumbotron {
+  background-color: rgb(6, 54, 133);
+  color: white;
+  height: 1rem;
+  margin-top: -3rem;
+}
+
+.team-area {
+  color: black;
+  background-color: aliceblue;
+}
+
+.employee-card {
+  /* margin: 1.5rem; */
+  /* padding: auto; */
+  background-color: rgba(248, 16, 16, 0.985);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem;
+  padding: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  gap: 2rem;
+}
+
+.card-title {
+  font-size: 1.7rem;
+  color: white;
+}
+
+.list-group-item {
+  padding-right: 5rem;
+  padding-left: -8rem;
+}

@@ -149,4 +149,5 @@ function finished() {
     fs.mkdirSync(OUTPUT_DIR);
   }
   fs.writeFileSync(outputPath, render(employeeArray), 'utf-8');
+  console.log('Congratulations, you have built your team!')
 }
