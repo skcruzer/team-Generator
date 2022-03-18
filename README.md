@@ -18,11 +18,11 @@
 
 ## <h3 id='installation'>Installation</h3>
 <p> Clone this repo to your device and then run the command <code>npm i</code> in your terminal. </p>
-<img src="./assets/images/team-Generator-Deployment.gif">
-<img src="./assets/images/team-Generator-Image.png">
 
 ## <h3 id='usage'>Usage</h3>
 <p> To use this application, run the command <code>node app.js</code> in your terminal. You will then be asked to enter your team's information. Once you have added every member of your team, your team roster will be generated as a team.html file in the output folder that can be opened in your default browser. </p>
+<img src="./assets/images/team-Generator-Deployment.gif">
+<img src="./assets/images/team-Generator-Image.png" width='565px'>
 
 ## <h3 id='contributing'>Contributing</h3>
 <p> This project is considered finished. However, the questions types can be changed to fit each user's needs. If you have anything you would like to contribute, please contact me. You can find my contact information below in the <a href='#questions'>Questions</a> section. </p>
@@ -32,4 +32,6 @@
 
 ## <h3 id='questions'>Questions</h3>
 <p>Have questions? Please feel free to reach out to me on github at skcruzer or by email at seankennethcruz@gmail.com </p>
-    
+
+- - -
+© 2022 Skcruzer, Inc. All Rights Reserved.
