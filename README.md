@@ -1,11 +1,11 @@
 
 <img src='https://img.shields.io/badge/License-Apache 2.0-yellow.svg'>
 
-## <h1> Team Generator </h1>
-## <h2> Description </h2>
+<h1> Team Generator </h1>
+<h2> Description </h2>
 <p> This is a <code>node.js</code> application that creates a team roster for a user that wants to have a useful application that stores a team's name, contact and general information. </p>
 
-## <h2> Table of Contents </h2>
+<h2> Table of Contents </h2>
 <details open='open'>
 <summary>Table of Contents</summary>
 <ol>
