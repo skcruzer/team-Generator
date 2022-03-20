@@ -21,6 +21,9 @@
 
 ## <h3 id='usage'>Usage</h3>
 <p> To use this application, run the command <code>node app.js</code> in your terminal. You will then be asked to enter your team's information. Once you have added every member of your team, your team roster will be generated as a team.html file in the output folder that can be opened in your default browser. </p>
+
+Youtube Link: <a href='https://youtu.be/bUam0gO2-Ck' target='_blank'>Engineering Team Generator Walkthrough</a> 
+
 <img src="./assets/images/team-Generator-Deployment.gif">
 <img src="./assets/images/team-Generator-Image.png" width='565px'>
 
@@ -31,7 +34,7 @@
 <p> To test, you can run the command <code>npm run test</code> in your terminal. As it stands, this application passes all tests. </p>
 
 ## <h3 id='questions'>Questions</h3>
-<p>Have questions? Please feel free to reach out to me on github at skcruzer or by email at seankennethcruz@gmail.com </p>
+<p>Have questions? Please feel free to reach out to me on github at <a href='https://github.com/skcruzer'target='_blank'>skcruzer </a> or by email at <a href='mailto:seankennethcruz@gmail.com'target='_blank'>seankennethcruz@gmail.com</a>.</p>
 
 - - -
 © 2022 Skcruzer, Inc. All Rights Reserved.
