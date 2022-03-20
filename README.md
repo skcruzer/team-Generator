@@ -34,7 +34,7 @@ Youtube Link: <a href='https://youtu.be/bUam0gO2-Ck' target='_blank'>Engineering
 <p> To test, you can run the command <code>npm run test</code> in your terminal. As it stands, this application passes all tests. </p>
 
 ## <h3 id='questions'>Questions</h3>
-<p>Have questions? Please feel free to reach out to me on github at <a href='https://github.com/skcruzer'target='_blank'>skcruzer </a> or by email at <a href='mailto:seankennethcruz@gmail.com'target='_blank'>seankennethcruz@gmail.com</a>.</p>
+<p>Have questions? Please feel free to reach out to me on github at <a href='https://github.com/skcruzer'target='_blank'>skcruzer</a> or by email at <a href='mailto:seankennethcruz@gmail.com'target='_blank'>seankennethcruz@gmail.com</a>.</p>
 
 - - -
 © 2022 Skcruzer, Inc. All Rights Reserved.
